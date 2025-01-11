@@ -23,7 +23,7 @@ google_api_key=st.sidebar.text_input("Enter Google Gemini API Key")
 os.environ['GOOGLE_API_KEY']=google_api_key
 
 st.sidebar.write("For downloading the document click the button below")
-pdf_path = "census\mumbai population.pdf"
+pdf_path = "census/mumbai population.pdf"
 with open(pdf_path, "rb") as file:
     reader = PyPDF2.PdfReader(file)
     pdf_content = ""
