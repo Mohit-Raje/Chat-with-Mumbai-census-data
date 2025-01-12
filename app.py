@@ -43,7 +43,7 @@ st.title("UrbanSage Mumbai - For a chatbot that provides wisdom about urban popu
 
 
 llm=ChatGroq(groq_api_key=groq_api_key,
-             model_name="Llama3-8b-8192")
+             model_name="gemma2-9b-it")
 
 prompt=ChatPromptTemplate.from_template(
 """
